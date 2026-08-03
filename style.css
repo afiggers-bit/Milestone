@@ -1,12 +1,12 @@
 .nav {
-    background-color: #333;
+    background-color: #164acc;
     overflow: hidden;
 }
 
 .nav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #009da8c5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -19,7 +19,7 @@
 }
 
 header {
-    background-color: #f2f2f2;
+    background-color: #930dcca4;
     padding: 20px;
     text-align: center;
 }
@@ -42,6 +42,12 @@ img {
     .nav a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
+}
+body {
+    background-color: #5c0386f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
