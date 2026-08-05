@@ -2,7 +2,11 @@
     background-color: #164acc;
     overflow: hidden;
 }
-
+head {
+    background-color: #164acc;
+    overflow: hidden;
+    
+}
 .nav a {
     float: left;
     display: block;
@@ -12,14 +16,11 @@
     text-decoration: none;
 }
 
-.card .cards body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 header {
-    background-color: #930dcca4;
+    
+    color: #93c9c0eb;
     padding: 20px;
     text-align: center;
 }
@@ -47,7 +48,18 @@ img {
 }
 body {
     background-color: #5c0386f1;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Calibri, Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid #dac208ba;
 }
+
+.dragon {
+    color: #0aeadb7b;
+}
+#gryffon {
+    color: #d0ea0aa7;
+}
+.test h2{
+    color: #ea510ac5;
+} 
