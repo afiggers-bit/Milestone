@@ -1,23 +1,20 @@
-.nav {
-    background-color: #164acc;
-    overflow: hidden;
+nav {
+display: flex;
+flex-wrap: wrap;
 }
 head {
     background-color: #164acc;
     overflow: hidden;
     
 }
-.nav a {
-    float: left;
-    display: block;
+nav a {
+   
     border: 2px solid #a89507ba;
     color: #009da8c5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-
 
 header {
     
@@ -40,10 +37,9 @@ img {
 }
 
 
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
     .nav a {
         float: none;
-        display: block;
         text-align: center;
     }
 }
