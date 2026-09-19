@@ -60,3 +60,84 @@ body {
 .test h2{
     color: #ea510ac5;
 } 
+/* Container & Fieldset Styling */
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 400px;
+}
+
+fieldset {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 0;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+/* Proximity Spacing */
+.field-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+input, textarea {
+  padding: 1px;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Accessible Focus States */
+input:focus-visible, textarea:focus-visible, button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Accessible Error States */
+.error-message {
+  display: none;
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Triggered on validation failure */
+input[aria-invalid="true"], textarea[aria-invalid="true"] {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+}
+
+input[aria-invalid="true"] + .error-message,
+textarea[aria-invalid="true"] + .error-message {
+  display: block;
+}
+
+/* Similarity Buttons */
+.button-group {
+  display: flex;
+  gap: 100px;
+}
+
+.btn {
+  padding: 2px 2px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary { background: #2563eb; color: white; border: none; }
+.btn-secondary { background: transparent; border: 1px solid #94a3b8; }
