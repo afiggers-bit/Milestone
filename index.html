@@ -1,50 +1,49 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>My First Page</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <main>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about_me.html">Contact</a>
-        </nav>
-        <header>
-            <h1>Welcome To The Page Of Power</h1>
-        </header>
-        <img src="omni.png" alt="omni man" width="200" height="200">
-        <section class="test">
-            <h2>About Me</h2>
-            <p>I am a web developer learning HTML and CSS. I'mcurrently working on improving my skills and building
-                more complex projects.</p>
-        </section>
+  <header>
+    <h1>Welcome To My Portfolio</h1>
+  </header>
 
-        <section class="test">
-            <h2>My Projects</h2>
-            <p>Here are some of the projects I have worked on:</p>
-            <ul>
-                <li class="dragon">Project 1: Personal Portfolio</li>
-                <li id="gryffon">Project 2: CompTia A+ core 1</li>
-                <li class="spider">Project 3: Spreadsheets</li>
-            </ul>
-        </section>
-        
-        <section class="test">
-            <h2 class="dragon">Contact Me</h2>
-            <p>816-555-5555
-            </p>
-            <p email="afiggers@campus.edu">Email: afiggers@campus.edu</p>
-        </section>
-    </main>
+  <nav id="main-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about_me.html">Contact</a>
+  </nav>
 
+  <main class="container">
+    <section class="profile-hero card">
+      <img src="omni.png" alt="Omni Man Avatar" class="profile-img">
+      <div>
+        <h2>About Me</h2>
+        <p>I am a web developer learning HTML, CSS, and JavaScript. I am currently working on improving my skills and building more complex interactive projects.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Featured Skills & Knowledge</h2>
+      <ul class="skills-list">
+        <li>Project 1: Personal Portfolio</li>
+        <li>Project 2: CompTIA A+ Core 1</li>
+        <li>Project 3: Data & Spreadsheets</li>
+      </ul>
+    </section>
+
+    <section id="api-card" class="card">
+      <h2>Live Developer Stats</h2>
+      <p id="api-status">Loading live GitHub profile data...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Adonte. All rights reserved.</p>
+  </footer>
 </body>
-
-
-
-
 </html>

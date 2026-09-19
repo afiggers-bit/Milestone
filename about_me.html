@@ -1,81 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <title>About Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <h1>Thank You For Visiting My Page</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about_me.html">Contact</a>
-    </nav>
-    <main>
-        <section>
-            <h2> About Me</h2>
-            <p>I am a web developer learning HTML and CSS. Currently working on improving my skills and building more
-                complex projects.</p>
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-            <p>Phone: 816-555-5555</p>
-            <p>Email: afiggers@campus.edu</p>
-        </section>
-        <section>
-            <section class="card">
-                <h2>Contact Us</h2>
+  <header>
+    <h1>Contact & Connect</h1>
+  </header>
 
-                <form id="contact-form" novalidate>
-                    <!-- Common Region & Grouping -->
-                    <fieldset>
-                        <legend>Send us a message</legend>
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about_me.html" class="active">Contact</a>
+  </nav>
 
-                        <!-- Field Group 1: Name -->
-                        <div class="field-group">
-                            <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
-                            <input type="text" id="full-name" name="name" required aria-required="true"
-                                aria-describedby="name-error">
-                            <span id="name-error" class="error-message" role="alert">
-                                Please enter your full name.
-                            </span>
-                        </div>
+  <main class="container">
+    <section class="card">
+      <h2>Get In Touch</h2>
+      <p><strong>Phone:</strong> 816-555-5555</p>
+      <p><strong>Email:</strong> <a href="mailto:afiggers@campus.edu">afiggers@campus.edu</a></p>
+    </section>
 
-                        <!-- Field Group 2: Email -->
-                        <div class="field-group">
-                            <label for="email-address">Email Address <span aria-hidden="true">*</span></label>
-                            <input type="email" id="email-address" name="email" required aria-required="true"
-                                aria-describedby="email-error">
-                            <span id="email-error" class="error-message" role="alert">
-                                Please enter a valid email address.
-                            </span>
-                        </div>
+    <section class="card">
+      <h2>Send a Message</h2>
+      <form id="contact-form" novalidate>
+        <fieldset>
+          <legend>Message Form</legend>
 
-                        <!-- Field Group 3: Message -->
-                        <div class="field-group">
-                            <label for="user-message">Your Message <span aria-hidden="true">*</span></label>
-                            <textarea id="user-message" name="message" rows="4" required aria-required="true"
-                                aria-describedby="message-error"></textarea>
-                            <span id="message-error" class="error-message" role="alert">
-                                Please write a message before submitting.
-                            </span>
-                        </div>
+          <div class="field-group">
+            <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="full-name" name="name" required aria-required="true" aria-describedby="name-error">
+            <span id="name-error" class="error-message" role="alert">Please enter your full name.</span>
+          </div>
 
-                        <!-- Action Buttons -->
-                        <div class="button-group">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <button type="reset" class="btn btn-secondary">Clear</button>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+          <div class="field-group">
+            <label for="email-address">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email-address" name="email" required aria-required="true" aria-describedby="email-error">
+            <span id="email-error" class="error-message" role="alert">Please enter a valid email address.</span>
+          </div>
 
-    </main>
+          <div class="field-group">
+            <label for="user-message">Your Message <span aria-hidden="true">*</span></label>
+            <textarea id="user-message" name="message" rows="4" required aria-required="true" aria-describedby="message-error"></textarea>
+            <span id="message-error" class="error-message" role="alert">Please write a message before submitting.</span>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Adonte. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>

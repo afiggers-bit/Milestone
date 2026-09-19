@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <title>My Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about_me.html">Contact</a>
-    </nav>
-    <main>  
-        <section>
-            <h2>Project 1: Personal Portfolio</h2>
-            <h3>Info:</h3>
-        </section>
-        <section>
-            <h2>Project 2: CompTia A+ core 1</h2>
-            <h3>Info:</h3>
-        </section>
-        <section>
-            <h2>Project 3: Spreadsheets</h2>
-            <h3>Info:</h3>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Adonte. All rights reserved.</p>
-    </footer>   
+  <header>
+    <h1>My Technical Projects</h1>
+  </header>
+
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="about_me.html">Contact</a>
+  </nav>
+
+  <main class="container">
+    <div class="projects-grid">
+      <article class="card">
+        <h2>Personal Portfolio</h2>
+        <p>A responsive website featuring custom CSS styling, semantic HTML structures, and dynamic JavaScript interactions.</p>
+      </article>
+
+      <article class="card">
+        <h2>CompTIA A+ Core 1</h2>
+        <p>Hardware, networking, and mobile device troubleshooting concepts and practical technical skills documentation.</p>
+      </article>
+
+      <article class="card">
+        <h2>Spreadsheet Analysis</h2>
+        <p>Data modeling, function formulas, and dynamic chart implementations for project management analytics.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Adonte. All rights reserved.</p>
+  </footer>
 </body>
 </html>
